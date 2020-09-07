@@ -1,6 +1,6 @@
 {
-  "homepage": "devanshumodi.tech/",
-  "name": "www.devanshumodi.tech",
+  "homepage": "https://www.devanshumodi.tech/",
+  "name": "devanshumodi.tech",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
