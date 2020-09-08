@@ -18,7 +18,7 @@ import machineLearningModel from '@iconify/icons-carbon/machine-learning-model';
 const greeting = {
   username: "Devanshu Modi",
   title: "Hi! I'm Devanshu",
-  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with Spring Boot / Django / JavaScript / Angular and some other cool libraries and frameworks."),
+  subTitle: emoji("A passionate Software Developer 🚀 having experience in building Web and Mobile applications with Spring Boot / Django / JavaScript / Angular and some other cool libraries and frameworks."),
   resumeLink: "https://drive.google.com/file/d/1VENzYHdn8MQDtwhd2DM72Uxl5WpRbx9W/view?usp=sharing"
 };
 
