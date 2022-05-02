@@ -13,7 +13,6 @@ import springIcon from '@iconify/icons-simple-icons/spring';
 import javascriptIcon from '@iconify/icons-simple-icons/javascript';
 import golangIcon from '@iconify-icons/grommet-icons/golang';
 import mysqlIcon from '@iconify/icons-simple-icons/mysql';
-import mongodbIcon from '@iconify/icons-simple-icons/mongodb';
 import pandasIcon from '@iconify/icons-simple-icons/pandas';
 import graphAlt from '@iconify/icons-el/graph-alt';
 import cIcon from '@iconify/icons-file-icons/c';
@@ -223,11 +222,7 @@ const workExperiences = {
       company: "ADesignGuy.co",
       companylogo: require("./assets/images/adg.png"),
       date: "Sep 2019 – Nov 2019",
-      desc: "Analyzed data of over 200 websites and scraped over 300 websites, running efficient scripts in Python and using Chrome Web Tools.",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
+      desc: "Analyzed data of over 200 websites and scraped over 300 websites, running efficient scripts in Python and using Chrome Web Tools."
     }
     // {
     //   role: "Data Science Intern",   

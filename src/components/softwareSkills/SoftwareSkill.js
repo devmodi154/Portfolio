@@ -1,7 +1,7 @@
 import React from "react";
 import "./SoftwareSkill.scss";
 import {skillsSection} from "../../portfolio";
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 
 
 export default function SoftwareSkill() {
