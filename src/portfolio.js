@@ -133,11 +133,11 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Machine Learning",
       fontAwesomeClassname: machineLearningModel
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
     }
+    // {
+    //   skillName: "docker",
+    //   fontAwesomeClassname: "fab fa-docker"
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -149,7 +149,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Manipal University Jaipur",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/muj.png"),
       subHeader: "Bachelors of Technology Computer Science",
       duration: "June 2017 - August 2021",
       desc: "GPA: 9.14",
