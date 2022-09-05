@@ -36,9 +36,9 @@ const illustration = {
 const greeting = {
   username: "Devanshu Modi",
   title: "Hi! I'm Devanshu",
-  subTitle: emoji(
-    "A passionate Software Developer 🚀 having experience in building Web and Mobile applications with Spring Boot / Django / JavaScript / Angular and some other cool libraries and frameworks."
-  ),
+  subTitle: 
+    "A passionate Software Developer 🚀 currently working as a Software Engineer (Backend) at Grab Greco LLP working with technologies like Golang / Git / SQL / React / AWS. Learning and Building scalable Web applications in JavaScript / React / Django / cool libraries and frameworks."
+  ,
   resumeLink:
     "https://drive.google.com/file/d/1VENzYHdn8MQDtwhd2DM72Uxl5WpRbx9W/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -50,6 +50,7 @@ const socialMediaLinks = {
   github: "https://github.com/devmodi154",
   linkedin: "https://www.linkedin.com/in/devanshu-modi-4a9a96160/",
   gmail: "devmodi154@gmail.com",
+  twitter: "https://twitter.com/DevanshuModi04",
   // gitlab: "https://gitlab.com/saadpasta",
   // facebook: "https://www.facebook.com/saad.pasta7",
   // medium: "https://medium.com/@saadpasta",
@@ -65,13 +66,9 @@ const skillsSection = {
   title: "What I do",
   subTitle: "ALWAYS EXPLORING!",
   skills: [
-    emoji(
-      "⚡ Developing Web Applications and Automation Solutions."
-    ),
-    emoji("⚡ Practicing Data Structures and Algorithms."),
-    emoji(
-      "⚡ Learning more about Data Science."
-    )
+    emoji("⚡ Working and developing on new ideas."),
+    emoji("⚡ Learning to develop scalable applications."),
+    emoji("⚡ Learning more about Data Science.")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -202,18 +199,18 @@ const workExperiences = {
     {
       role: "Software Engineer",
       company: "Grab",
-      companylogo: require("./assets/images/grab2.png"),
+      companylogo: require("./assets/images/grab.jpeg"),
       date: "Aug 2021 – Present",
       descBullets: [
-        "Solved multiple Open Production Issues in rotational on-call duties.",
-        "Implemented multiple APIs to manually push data into the stream using bulk processors, with added monitoring to prevent transactional data sync.",
+        "Implemented multiple REST APIs in Golang to manually push data into the stream using bulk processors,with added monitoring to prevent transactional data async.",
+        "Analyzed complete flows of Driver wallet exchanges for Hystrix Timeout failures to bring out measures for mitigation",
       ]
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       role: "Backend Engineer Intern",
       company: "Grab",
-      companylogo: require("./assets/images/grab2.png"),
+      companylogo: require("./assets/images/grab.jpeg"),
       date: "Feb 2015 – Aug 2015",
       desc: "Onboarded multiple endpoints on Gateway upon deprecation from TCP route. Investigated and resolved more than 50 Open Production Issues using tools like debugging tools like Kibana, Datadog & awscli in on-call duty for a duration of over six weeks."
     },
@@ -400,7 +397,7 @@ const contactInfo = {
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
+  userName: "DevanshuModi04", //Replace "twitter" with your twitter username without @
   display: false // Set true to display this section, defaults to false
 };
 
