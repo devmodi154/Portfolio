@@ -8,7 +8,6 @@ import djangoIcon from '@iconify/icons-simple-icons/django';
 import reactIcon from '@iconify/icons-simple-icons/react';
 import fireBaseIcon from '@iconify/icons-file-icons/firebase';
 import pythonIcon from '@iconify/icons-simple-icons/python';
-import javaIcon from '@iconify/icons-simple-icons/java';
 import springIcon from '@iconify/icons-simple-icons/spring';
 import javascriptIcon from '@iconify/icons-simple-icons/javascript';
 import golangIcon from '@iconify-icons/grommet-icons/golang';
@@ -18,7 +17,6 @@ import graphAlt from '@iconify/icons-el/graph-alt';
 import cIcon from '@iconify/icons-file-icons/c';
 import shovelIcon from '@iconify/icons-si-glyph/shovel';
 import machineLearningModel from '@iconify/icons-carbon/machine-learning-model';
-
 // Splash Screen
 
 const splashScreen = {
@@ -37,12 +35,13 @@ const greeting = {
   username: "Devanshu Modi",
   title: "Hi! I'm Devanshu",
   subTitle: 
-    "A passionate Software Developer 🚀 currently working as a Software Engineer (Backend) at Grab Greco LLP working with technologies like Golang / Git / SQL / React / AWS. Learning and Building scalable Web applications in JavaScript / React / Django / cool libraries and frameworks."
+    "A passionate Software Developer 🚀 currently working as a Software Engineer (Backend) at Nektar.ai working with technologies like NodeJS / Graffy / Postgres / React / AWS. Learning and Building scalable Web applications in JavaScript / React / Django / cool libraries and frameworks."
   ,
   resumeLink:
     "https://drive.google.com/file/d/1VENzYHdn8MQDtwhd2DM72Uxl5WpRbx9W/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
+
 
 // Social Media Links
 
@@ -61,7 +60,6 @@ const socialMediaLinks = {
 };
 
 // Skills Section
-
 const skillsSection = {
   title: "What I do",
   subTitle: "ALWAYS EXPLORING!",
@@ -82,10 +80,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Golang",
       fontAwesomeClassname: golangIcon
-    },
-    {
-      skillName: "Java",
-      fontAwesomeClassname: javaIcon
     },
     {
       skillName: "C++",
@@ -140,7 +134,6 @@ https://fontawesome.com/icons?d=gallery */
 };
 
 // Education Section
-
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
@@ -192,15 +185,25 @@ const techStack = {
 };
 
 // Work experience section
-
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
       role: "Software Engineer",
+      company: "Nektar.ai",
+      companylogo: require("./assets/images/nektar.jpeg"),
+      date: "Jan 2023 – Present",
+      descBullets: [
+        "Designed and implemented a feature to create and automatically populate custom fields in Salesforce, enhancing CRM data quality for the Customer Success team.",
+        "Developed an internal tool within the Admin UI to execute SOQL queries and present query results efficiently.",
+      ]
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      role: "Software Engineer",
       company: "Grab",
       companylogo: require("./assets/images/grab.jpeg"),
-      date: "Aug 2021 – Present",
+      date: "Aug 2021 – Dec 2022",
       descBullets: [
         "Implemented multiple REST APIs in Golang to manually push data into the stream using bulk processors,with added monitoring to prevent transactional data async.",
         "Analyzed complete flows of Driver wallet exchanges for Hystrix Timeout failures to bring out measures for mitigation",
@@ -214,13 +217,13 @@ const workExperiences = {
       date: "Feb 2015 – Aug 2015",
       desc: "Onboarded multiple endpoints on Gateway upon deprecation from TCP route. Investigated and resolved more than 50 Open Production Issues using tools like debugging tools like Kibana, Datadog & awscli in on-call duty for a duration of over six weeks."
     },
-    {
-      role: "Web Scraping Intern",  
-      company: "ADesignGuy.co",
-      companylogo: require("./assets/images/adg.png"),
-      date: "Sep 2019 – Nov 2019",
-      desc: "Analyzed data of over 200 websites and scraped over 300 websites, running efficient scripts in Python and using Chrome Web Tools."
-    }
+    // {
+    //   role: "Web Scraping Intern",  
+    //   company: "ADesignGuy.co",
+    //   companylogo: require("./assets/images/adg.png"),
+    //   date: "Sep 2019 – Nov 2019",
+    //   desc: "Analyzed data of over 200 websites and scraped over 300 websites, running efficient scripts in Python and using Chrome Web Tools."
+    // }
     // {
     //   role: "Data Science Intern",   
     //   company: "CSIR-Central Drug Research Institute",
@@ -238,7 +241,6 @@ const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
-
 // Some big projects you have worked on
 
 const bigProjects = {
@@ -286,6 +288,7 @@ const achievementSection = {
       subtitle:
         "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
       image: require("./assets/images/codeInLogo.webp"),
+      imageAlt: "Google Code-In Logo",
       footerLink: [
         {
           name: "Certification",
@@ -306,6 +309,7 @@ const achievementSection = {
       subtitle:
         "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
       image: require("./assets/images/googleAssistantLogo.webp"),
+      imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
           name: "View Google Assistant Action",
@@ -318,6 +322,7 @@ const achievementSection = {
       title: "PWA Web App Developer",
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
       image: require("./assets/images/pwaLogo.webp"),
+      imageAlt: "PWA Logo",
       footerLink: [
         {name: "Certification", url: ""},
         {
@@ -395,11 +400,13 @@ const contactInfo = {
 };
 
 // Twitter Section
-
 const twitterDetails = {
   userName: "DevanshuModi04", //Replace "twitter" with your twitter username without @
   display: false // Set true to display this section, defaults to false
 };
+
+
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -417,5 +424,6 @@ export {
   talkSection,
   podcastSection,
   contactInfo,
-  twitterDetails
+  twitterDetails,
+  isHireable
 };
