@@ -4,19 +4,20 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-import djangoIcon from '@iconify/icons-simple-icons/django';
-import reactIcon from '@iconify/icons-simple-icons/react';
-import fireBaseIcon from '@iconify/icons-file-icons/firebase';
-import pythonIcon from '@iconify/icons-simple-icons/python';
-import springIcon from '@iconify/icons-simple-icons/spring';
-import javascriptIcon from '@iconify/icons-simple-icons/javascript';
-import golangIcon from '@iconify-icons/grommet-icons/golang';
-import mysqlIcon from '@iconify/icons-simple-icons/mysql';
-import pandasIcon from '@iconify/icons-simple-icons/pandas';
-import graphAlt from '@iconify/icons-el/graph-alt';
-import cIcon from '@iconify/icons-file-icons/c';
-import shovelIcon from '@iconify/icons-si-glyph/shovel';
-import machineLearningModel from '@iconify/icons-carbon/machine-learning-model';
+import pandasIcon from "@iconify/icons-simple-icons/pandas";
+import graphAlt from "@iconify/icons-el/graph-alt";
+import cIcon from "@iconify/icons-file-icons/c";
+import shovelIcon from "@iconify/icons-si-glyph/shovel";
+import machineLearningModel from "@iconify/icons-carbon/machine-learning-model";
+import {FaPython, FaReact} from "react-icons/fa";
+import {FaGolang} from "react-icons/fa6";
+import {IoLogoJavascript, IoLogoFirebase} from "react-icons/io5";
+import {SiDjango, SiPandas, SiPlotly} from "react-icons/si";
+import {GrMysql} from "react-icons/gr";
+import {BiLogoSpringBoot, BiLogoPostgresql} from "react-icons/bi";
+import {TbBrandCpp, TbShovel} from "react-icons/tb";
+import {GiArtificialIntelligence} from "react-icons/gi";
+
 // Splash Screen
 
 const splashScreen = {
@@ -34,14 +35,12 @@ const illustration = {
 const greeting = {
   username: "Devanshu Modi",
   title: "Hi! I'm Devanshu",
-  subTitle: 
-    "A passionate Software Developer 🚀 currently working as a Software Engineer (Backend) at Nektar.ai working with technologies like NodeJS / Graffy / Postgres / React / AWS. Learning and Building scalable Web applications in JavaScript / React / Django / cool libraries and frameworks."
-  ,
+  subTitle:
+    "A passionate Software Developer 🚀 currently working as a Software Engineer (Backend) at Nektar.ai working with technologies like NodeJS / Graffy / Postgres / React / AWS. Learning and Building scalable Web applications in JavaScript / React / Django / cool libraries and frameworks.",
   resumeLink:
     "https://drive.google.com/file/d/1VENzYHdn8MQDtwhd2DM72Uxl5WpRbx9W/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
-
 
 // Social Media Links
 
@@ -75,55 +74,59 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "Python",
-      fontAwesomeClassname: pythonIcon
+      fontAwesomeClassname: <FaPython />
     },
     {
       skillName: "Golang",
-      fontAwesomeClassname: golangIcon
-    },
-    {
-      skillName: "C++",
-      fontAwesomeClassname: cIcon
+      fontAwesomeClassname: <FaGolang />
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: javascriptIcon
+      fontAwesomeClassname: <IoLogoJavascript />
     },
     {
       skillName: "Django",
-      fontAwesomeClassname: djangoIcon
-    },
-    {
-      skillName: "Spring Boot",
-      fontAwesomeClassname: springIcon
+      fontAwesomeClassname: <SiDjango />
     },
     {
       skillName: "ReactJS",
-      fontAwesomeClassname: reactIcon
+      fontAwesomeClassname: <FaReact />
+    },
+    {
+      skillName: "C++",
+      fontAwesomeClassname: <TbBrandCpp />
+    },
+    {
+      skillName: "Spring Boot",
+      fontAwesomeClassname: <BiLogoSpringBoot />
     },
     {
       skillName: "MySQL",
-      fontAwesomeClassname: mysqlIcon
+      fontAwesomeClassname: <GrMysql />
+    },
+    {
+      skillName: "Postgresql",
+      fontAwesomeClassname: <BiLogoPostgresql />
     },
     {
       skillName: "Firebase",
-      fontAwesomeClassname: fireBaseIcon
+      fontAwesomeClassname: <IoLogoFirebase />
     },
     {
       skillName: "Pandas",
-      fontAwesomeClassname: pandasIcon
+      fontAwesomeClassname: <SiPandas />
     },
     {
       skillName: "Matplotlib",
-      fontAwesomeClassname: graphAlt
+      fontAwesomeClassname: <SiPlotly />
     },
     {
       skillName: "Web Scraping",
-      fontAwesomeClassname: shovelIcon
+      fontAwesomeClassname: <TbShovel />
     },
     {
-      skillName: "Machine Learning",
-      fontAwesomeClassname: machineLearningModel
+      skillName: "ML",
+      fontAwesomeClassname: <GiArtificialIntelligence />
     }
     // {
     //   skillName: "docker",
@@ -151,7 +154,7 @@ const educationInfo = {
         "Software Engineering",
         "Operating Systems"
       ]
-    },
+    }
     // {
     //   schoolName: "Stanford University",
     //   logo: require("./assets/images/stanfordLogo.png"),
@@ -195,7 +198,7 @@ const workExperiences = {
       date: "Jan 2023 – Present",
       descBullets: [
         "Designed and implemented a feature to create and automatically populate custom fields in Salesforce, enhancing CRM data quality for the Customer Success team.",
-        "Developed an internal tool within the Admin UI to execute SOQL queries and present query results efficiently.",
+        "Developed an internal tool within the Admin UI to execute SOQL queries and present query results efficiently."
       ]
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
@@ -206,31 +209,41 @@ const workExperiences = {
       date: "Aug 2021 – Dec 2022",
       descBullets: [
         "Implemented multiple REST APIs in Golang to manually push data into the stream using bulk processors,with added monitoring to prevent transactional data async.",
-        "Analyzed complete flows of Driver wallet exchanges for Hystrix Timeout failures to bring out measures for mitigation",
+        "Analyzed complete flows of Driver wallet exchanges for Hystrix Timeout failures to bring out measures for mitigation"
       ]
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      role: "Backend Engineer Intern",
+      role: "Software Engineer (Backend) Intern",
       company: "Grab",
       companylogo: require("./assets/images/grab.jpeg"),
-      date: "Feb 2015 – Aug 2015",
+      date: "Feb 2021 – Aug 2021",
       desc: "Onboarded multiple endpoints on Gateway upon deprecation from TCP route. Investigated and resolved more than 50 Open Production Issues using tools like debugging tools like Kibana, Datadog & awscli in on-call duty for a duration of over six weeks."
     },
-    // {
-    //   role: "Web Scraping Intern",  
-    //   company: "ADesignGuy.co",
-    //   companylogo: require("./assets/images/adg.png"),
-    //   date: "Sep 2019 – Nov 2019",
-    //   desc: "Analyzed data of over 200 websites and scraped over 300 websites, running efficient scripts in Python and using Chrome Web Tools."
-    // }
-    // {
-    //   role: "Data Science Intern",   
-    //   company: "CSIR-Central Drug Research Institute",
-    //   companylogo: require("./assets/images/quoraLogo.png"),
-    //   date: "May 2019 – Jun 2019",
-    //   desc: "Worked with collecting, cleaning, and organizing databases of important educational organizations using Selenium, BeautifulSoup, Pandas in Python."
-    // }
+    {
+      role: "Student Developer",
+      company: "Crio.do",
+      companylogo: require("./assets/images/crio.jpeg"),
+      date: "Jan 2020 – Aug 2020",
+      descBullets: [
+        "Built the backend for a visual stock portfolio analyzer to help portfolio managers make trade recommendations for their clients.Implemented the core logic of the portfolio manager and published it as a library.Built the analyzer using Java, REST API, Jackson, and Interfaces.",
+        "Developed a Java backend for the app to list nearby restaurants and popular dishes. Implemented a REST API in Spring Boot, plugged with MongoDB, and a cache for better performance using Redis."
+      ]
+    },
+    {
+      role: "Web Scraping Intern",
+      company: "ADesignGuy.co",
+      companylogo: require("./assets/images/adg.png"),
+      date: "Sep 2019 – Nov 2019",
+      desc: "Analyzed data of over 200 websites and scraped over 300 websites, running efficient scripts in Python and using Chrome Web Tools."
+    },
+    {
+      role: "Data Science Intern",
+      company: "CSIR-CDRI",
+      companylogo: require("./assets/images/csir-cdri.jpeg"),
+      date: "May 2019 – Jun 2019",
+      desc: "Worked with collecting, cleaning, and organizing databases of important educational organizations using Selenium, BeautifulSoup, Pandas in Python."
+    }
   ]
 };
 
@@ -404,7 +417,6 @@ const twitterDetails = {
   userName: "DevanshuModi04", //Replace "twitter" with your twitter username without @
   display: false // Set true to display this section, defaults to false
 };
-
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
