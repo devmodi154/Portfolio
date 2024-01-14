@@ -4,11 +4,6 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-import pandasIcon from "@iconify/icons-simple-icons/pandas";
-import graphAlt from "@iconify/icons-el/graph-alt";
-import cIcon from "@iconify/icons-file-icons/c";
-import shovelIcon from "@iconify/icons-si-glyph/shovel";
-import machineLearningModel from "@iconify/icons-carbon/machine-learning-model";
 import {FaPython, FaReact} from "react-icons/fa";
 import {FaGolang} from "react-icons/fa6";
 import {IoLogoJavascript, IoLogoFirebase} from "react-icons/io5";
